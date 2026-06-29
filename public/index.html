@@ -3,31 +3,101 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Xiwang's Blog</title>
+    <title>Xi Wang</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/style.css">
 </head>
 <body>
-    <header>
-        <h1>Xiwang's Blog</h1>
-        <p>探索技术、生活与灵感的个人空间。</p>
-    </header>
-    <main>
-        <section class="posts">
-            <h2>最近发布</h2>
-            <article class="post-item">
-                <span class="date">2026-04-02</span>
-                <h3><a href="#">自动部署测试</a></h3>
-                <p>这是一条自动部署测试文章。当我们推送到 GitHub 时，Cloudflare Pages 会自动帮我们把这些改动发布上线！🤖</p>
-            </article>
-            <article class="post-item">
-                <span class="date">2026-04-01</span>
-                <h3><a href="/posts/hello-world.html">你好，世界：我的第一篇博客</a></h3>
-                <p>这是我利用 Cloudflare Pages 搭建的第一个个人博客。它简洁、高效且永久免费。</p>
-            </article>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2026 Xiwang. Powered by <a href="https://pages.cloudflare.com/">Cloudflare Pages</a>.</p>
-    </footer>
+    <!-- Background animated blobs for a premium feel -->
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="blob blob-3"></div>
+    
+    <div class="glass-container">
+        <header>
+            <div class="profile-section">
+                <div class="avatar">
+                    <span title="Xi Wang">XW</span>
+                </div>
+                <div class="title-section">
+                    <h1>Xi Wang</h1>
+                    <p class="subtitle">Developer &middot; Self-Hoster &middot; Explorer</p>
+                </div>
+            </div>
+            <nav class="social-links">
+                <a href="#services" title="Infrastructure">Services</a>
+                <a href="#blog" title="Recent Notes">Blog</a>
+                <a href="https://github.com/xiwang" target="_blank" title="GitHub">GitHub</a>
+            </nav>
+        </header>
+
+        <main>
+            <section class="intro">
+                <p>Hello! Welcome to my personal hub. I use this space to host my infrastructure services on my VPS, share my technical learnings, and write occasional blog posts.</p>
+            </section>
+
+            <section id="services" class="services-section">
+                <div class="section-header">
+                    <h2><span class="icon">✨</span> Services Hub</h2>
+                    <p>Quick access to my self-hosted applications.</p>
+                </div>
+                <!-- Feel free to update these links with your actual subdomain URLs -->
+                <div class="service-grid">
+                    <a href="#" class="service-card" title="Nextcloud">
+                        <div class="service-icon">☁️</div>
+                        <div class="service-info">
+                            <h3>Nextcloud</h3>
+                            <p>Private Cloud</p>
+                        </div>
+                    </a>
+                    <a href="#" class="service-card" title="Jellyfin">
+                        <div class="service-icon">🎬</div>
+                        <div class="service-info">
+                            <h3>Jellyfin</h3>
+                            <p>Media Server</p>
+                        </div>
+                    </a>
+                    <a href="#" class="service-card" title="Grafana">
+                        <div class="service-icon">📊</div>
+                        <div class="service-info">
+                            <h3>Grafana</h3>
+                            <p>Monitoring</p>
+                        </div>
+                    </a>
+                    <a href="#" class="service-card" title="Gitea">
+                        <div class="service-icon">📝</div>
+                        <div class="service-info">
+                            <h3>Gitea</h3>
+                            <p>Code Repository</p>
+                        </div>
+                    </a>
+                </div>
+            </section>
+
+            <section id="blog" class="posts-section">
+                <div class="section-header">
+                    <h2><span class="icon">✍️</span> Recent Notes</h2>
+                </div>
+                <div class="post-list">
+                    <article class="post-card">
+                        <span class="post-date">2026-04-02</span>
+                        <h3><a href="#">自动部署测试</a></h3>
+                        <p>这是一条自动部署测试文章。当我们推送到 GitHub 时，Cloudflare Pages 会自动帮我们把这些改动发布上线！🤖</p>
+                    </article>
+                    <article class="post-card">
+                        <span class="post-date">2026-04-01</span>
+                        <h3><a href="/posts/hello-world.html">你好，世界：我的第一篇博客</a></h3>
+                        <p>这是我利用 Cloudflare Pages 搭建的第一个个人博客。它简洁、高效且永久免费。</p>
+                    </article>
+                </div>
+            </section>
+        </main>
+        
+        <footer>
+            <p>&copy; 2026 Xi Wang. Powered by <a href="https://pages.cloudflare.com/" target="_blank">Cloudflare Pages</a>.</p>
+        </footer>
+    </div>
 </body>
 </html>
